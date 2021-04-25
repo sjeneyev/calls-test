@@ -1,0 +1,35 @@
+.confirm-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 30vh;
+    left: 35vw;
+    width: 10vw;
+    height: 7vw;
+    padding: 16px;
+}
+
+.confirm-message {
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-box-actions {
+    text-align: right;
+}
+
+.confirm-box-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button {
+    margin: 0 10px;
+    width: 100px;
+    //background-color: #636262;
+
+    &.button:hover {
+        //background-color: #b13710;
+    }
+}

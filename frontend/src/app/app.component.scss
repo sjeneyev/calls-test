@@ -1,0 +1,29 @@
+@import "variables";
+
+.app-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    flex: 1;
+    background: rgb(11, 118, 186);
+    background: radial-gradient(
+            circle,
+            rgba(11, 118, 186, 1) 0%,
+            rgba(16, 56, 83, 1) 100%,
+            rgba(0, 212, 255, 1) 100%
+    );
+    margin: 0;
+
+    &.app-wrap-login {
+        background: rgb(11, 118, 186);
+        background: radial-gradient(
+                circle,
+                rgba(11, 118, 186, 1) 0%,
+                rgba(16, 56, 83, 1) 100%,
+                rgba(0, 212, 255, 1) 100%
+        );
+        margin: 0;
+    }
+}

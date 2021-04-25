@@ -1,0 +1,11 @@
+<div class="backdrop" (click)="onClose()"></div>
+<div class="confirm-box">
+    <div class="confirm-message">
+        <h3>{{ data }}</h3>
+    </div>
+    <div mat-dialog-actions class="confirm-box-actions">
+        <button mat-raised-button class="button" (click)="onClose()">
+            Close
+        </button>
+    </div>
+</div>

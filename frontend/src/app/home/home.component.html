@@ -1,0 +1,53 @@
+<div class="home-page">
+    <mat-card class="form-container">
+        <div class="phone-logo">
+            <img
+                class="phone-logo"
+                src="../../assets/images/phone-logo.png"
+                alt="#"
+            />
+        </div>
+        <div class="form-title">
+            <h1>Please upload your CSV file</h1>
+        </div>
+        <div>
+            <form [formGroup]="uploadForm">
+                <div class="form-group">
+                    <div class="file-wrap">
+                        <button
+                            class="img-button"
+                            type="button"
+                            mat-raised-button
+                            (click)="fileInput.click()">
+                            Choose File
+                        </button>
+                        <input
+                            hidden
+                            #fileInput
+                            type="file"
+                            id="file"
+                            (change)="onUpload($event)"
+                        />
+                        <div
+                            class="file-name"
+                            [title]="fileName"
+                            *ngIf="fileName !== ''"
+                        >
+                            {{ fileName }}
+                        </div>
+                        <div class="submit">
+                            <button
+                                [disabled]="!uploadForm.valid"
+                                type="button"
+                                mat-raised-button
+                                (click)="onSubmit()"
+                            >
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </mat-card>
+</div>

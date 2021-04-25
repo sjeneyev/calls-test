@@ -1,0 +1,66 @@
+@import "../variables";
+
+.home-page {
+    .form-container {
+        display: flex;
+        height: 400px;
+        width: 420px;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 20px 0;
+        justify-content: center;
+    }
+
+    .form-group {
+        display: flex;
+        margin-top: 30px;
+
+        .button-label {
+            margin-right: 15px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .img-button {
+            color: $white;
+            background-color: $item-color;
+        }
+
+        .file-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: -10x;
+            color: #6a6a6a;
+        }
+
+        .file-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+    }
+
+    .phone-logo {
+        width: 180px;
+    }
+}
+
+//
+//.file-name {
+//  text-overflow: ellipsis;
+//  white-space: nowrap;
+//  overflow: hidden;
+//  width: 220px;
+//}
+//
+//.avatar {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: left;
+//  align-items: center;
+//  margin-top: -10x;
+//  color: #6a6a6a;
+//}

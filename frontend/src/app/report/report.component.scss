@@ -1,0 +1,30 @@
+.report-page {
+    display: flex;
+    flex-direction: row;
+    height: 83vh;
+    margin: 55px 20px 0 0;
+    width: 90vw;
+
+    .calls-data {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .no-data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .calls-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+
+            table {
+                width: 100%;
+            }
+        }
+    }
+}
