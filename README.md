@@ -1,6 +1,8 @@
 # Calls-test
 
+* PHP version ">=7.0.0"
 * Verify that node is installed (Version 14.*). If not run `sudo n 14.15.4`
+* Verify angular cli is installed. If not run `npm install -g @angular/cli` 
 * Verify Laravel version 5.* (App is written in 5.5) 
 * Create a DB schema called `calls_db`
 * Adjust `.env` file in backend directory to correct DB credentials
