@@ -14,8 +14,8 @@ class PopulateContinentCodes extends Migration
      */
     public function up()
     {
-        if (($handle = fopen('storage/app/files/db_init.csv', 'r')) !== FALSE) { // Check the resource is valid
-            echo 'test';
+        if (($handle = fopen('db_init.csv', 'r')) !== FALSE) { // Check the resource is valid
+
             while (($data = fgetcsv($handle, 1000, "\n")) !== FALSE) { // Check opening the file is OK!
                 $fileContent[] = explode(',', $data[0]);
                 $row = explode(',', $data[0]);
@@ -26,12 +26,7 @@ class PopulateContinentCodes extends Migration
                 ]);
             }
             fclose($handle);
-//            print_r($fileContent);
         }
-        DB::table('countryinfo')->insert([
-            'phone' => 972,
-            'continent' => 'AS'
-        ]);
     }
 
     /**
