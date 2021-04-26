@@ -12,10 +12,13 @@ export class RestService {
     constructor(private http: HttpClient) {
     }
 
+
     get httpOptions() {
         const headers = {};
         headers['Access-Control-Allow-Origin'] = '*';
         headers['Content-type'] = 'text/csv';
+        // headers['Access-Control-Allow-Origin'] = 'http://localhost:8000';
+        headers['Access-Control-Allow-Credentials'] = 'true';
         return headers;
     }
 
